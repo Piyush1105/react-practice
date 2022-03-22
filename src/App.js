@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Createcontext from "./components/Createcontext";
+import Memo from "./components/Memo";
+import PreviousState from "./components/PreviousState";
+import Stopwatch from "./components/Stopwatch";
+import A from "./components/subcomponents/A";
+import Usecallback from "./components/Usecallback";
+import Useeffect from "./components/Useeffect";
+import Usememo from "./components/Usememo";
+import Useref from "./components/Useref";
+import Usestate from "./components/Usestate";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Useref />
+      <Usestate />
+      <A />
+      <Createcontext />
+      <Usecallback />
+      <Memo />
+      <Usememo />
+      <PreviousState />
+      <Useeffect />
+      <Stopwatch />
+    </>
   );
 }
 
